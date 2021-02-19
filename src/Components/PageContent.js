@@ -1,10 +1,8 @@
 import React from "react"
-import {Layout, Card} from 'antd'
+import {Card} from 'antd'
 
-export default function PageContent(props){
-    //const resumeLink = "https://drive.google.com/u/0/uc?id=1BR-g3xiQqkBeL8NMKDqBhmsODcHQOFxc&export=download"
-    const {Content} = Layout
-    
+export default function PageContent(){
+    //const resumeLink = "https://drive.google.com/u/0/uc?id=1BR-g3xiQqkBeL8NMKDqBhmsODcHQOFxc&export=download"  
     return(
         <Card>
             <h2>Welcome</h2>

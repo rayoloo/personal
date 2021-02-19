@@ -1,8 +1,7 @@
 import React , {useState} from 'react'
 import {Layout, Menu} from 'antd'
 import * as antdIcon from '@ant-design/icons';
-import logo from "../images/shuriken(1).png"
-import smalllogo from "../images/shuriken(2).png"
+
 
 export default function SideBarComponent() {
 
