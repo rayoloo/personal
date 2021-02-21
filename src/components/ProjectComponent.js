@@ -7,7 +7,6 @@ export default function ProjectComponent() {
     return (
         <Content>
             <Card>
-            <p id="text03">
                 <span><u><strong>Projects</strong></u></span>
                 <br/> 
                 <br/> 
@@ -42,9 +41,10 @@ export default function ProjectComponent() {
                 <span class="li">Companies can register to employ an online cafeteria where employees can order lunch meals from an online website to made on a chosen date.</span>
                 <br/> 
                 <span class="li">React Frontend</span>
+                <br/>
                 <span class="li">Flask Backend</span>
-                <span><span class="li">SQLite Database</span></span>
-            </p>
+                <br/>
+                <span class="li">SQLite Database</span>
             </Card>
         </Content>
     )
