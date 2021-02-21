@@ -1,21 +1,28 @@
 import React from 'react'
 import {Layout, Button} from 'antd'
 import { DownloadOutlined } from '@ant-design/icons';
-import PDF from "../pdf/Resume.pdf"
+
 
 
 export default function ResumeComponent() {
     const {Content} = Layout
     const resumeLink = "https://drive.google.com/u/0/uc?id=1BR-g3xiQqkBeL8NMKDqBhmsODcHQOFxc&export=download"
     return (
-        <Content style={{textAlign:'center'}}>
+        <Content>
             <br/>
-            <Button type="primary" shape="round" icon={<DownloadOutlined />} size="large" href={resumeLink}>
+            <div style={{position: "absolute", right: "15px", top: "100px"}}>
+            <Button type="primary" icon={<DownloadOutlined />} size="large" href={resumeLink}>
             Download
             </Button>
+            </div>
             <br/>
-            <br/>
-            <iframe src={PDF} title="Resume PDF" width="50%" height="90%"/>
+            <div style={{textAlign:'center', height: "92%"}}>
+                <iframe 
+                    src="https://docs.google.com/document/d/e/2PACX-1vTsws3RWgMXyKdfc_Jt05oksXem4x-FyqlWDGh8SQpOUW7uUfa9V7DrtVbxw9JqRR6WTfQ--ijkdxof/pub?embedded=true"
+                    height="100%"
+                    width="50%"
+                />
+            </div>
 
         </Content>
     )
