@@ -29,10 +29,23 @@ export default function SideBarComponent() {
                         <Menu.Item key="3">
                             <Link to="/project/1">Project 1</Link>
                         </Menu.Item>
-                        <Menu.Item key="4">Project 2</Menu.Item>
-                        <Menu.Item key="5">Project 3</Menu.Item>
+                        <Menu.Item key="4">
+                            <Link to="/project/2">Project 2</Link>
+                        </Menu.Item>
+                        <Menu.Item key="5">
+                            <Link to="/project/3">Project 3</Link>
+                        </Menu.Item>
+                        <Menu.Item key="6">
+                            <Link to="/project/4">Project 4</Link>
+                        </Menu.Item>
+                        <Menu.Item key="7">
+                            <Link to="/project/5">Project 5</Link>
+                        </Menu.Item>
+                        <Menu.Item key="8">
+                            <Link to="/project/6">Project 6</Link>
+                        </Menu.Item>
                     </SubMenu>
-                    <Menu.Item key="8" icon={<antdIcon.FilePdfOutlined />}>
+                    <Menu.Item key="2" icon={<antdIcon.FilePdfOutlined />}>
                     <Link to="/resume">Resume</Link>
                     </Menu.Item>
                 </Menu>

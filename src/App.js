@@ -26,6 +26,11 @@ class App extends React.Component{
                         <Switch>
                             <Route path='/' exact component={HomeComponent}/>
                             <Route path='/project/1' exact component={ProjectComponent}/>
+                            <Route path='/project/2' exact component={ProjectComponent}/>
+                            <Route path='/project/3' exact component={ProjectComponent}/>
+                            <Route path='/project/4' exact component={ProjectComponent}/>
+                            <Route path='/project/5' exact component={ProjectComponent}/>
+                            <Route path='/project/6' exact component={ProjectComponent}/>
                             <Route path='/experience' exact component={ExperienceComponent}/>
                             <Route path='/resume' exact component={ResumeComponent}/>
                         </Switch>
