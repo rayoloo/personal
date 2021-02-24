@@ -22,7 +22,7 @@ export default function SideBarComponent() {
             <Sider collapsible collapsed={sidebar} onCollapse={showSidebar}>
                 <Menu theme="dark"mode="inline" onClick={currentKey} selectedKeys={[key]}>
                     <Menu.Item key="1" icon={<antdIcon.PieChartOutlined />}>
-                        <Link to="/experience">Experiences</Link>
+                        <Link to="/experience">Coding Experiences</Link>
                     </Menu.Item>
                     <SubMenu key="sub1" icon={<antdIcon.DesktopOutlined />} title="Projects">
                         <Menu.Item key="3">

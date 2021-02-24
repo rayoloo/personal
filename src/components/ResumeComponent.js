@@ -10,7 +10,7 @@ export default function ResumeComponent() {
     return (
         <Content>
             <br/>
-            <div style={{position: "absolute", right: "15px", top: "100px"}}>
+            <div style={{position: "absolute", right: "30px", top: "100px"}}>
             <Button type="primary" icon={<DownloadOutlined />} size="large" href={resumeLink}>
             Download
             </Button>
@@ -18,6 +18,7 @@ export default function ResumeComponent() {
             <br/>
             <div style={{textAlign:'center', height: "92%"}}>
                 <iframe 
+                    title="resume document"
                     src="https://docs.google.com/document/d/e/2PACX-1vTsws3RWgMXyKdfc_Jt05oksXem4x-FyqlWDGh8SQpOUW7uUfa9V7DrtVbxw9JqRR6WTfQ--ijkdxof/pub?embedded=true"
                     height="100%"
                     width="50%"
