@@ -3,28 +3,22 @@ import {Slider, Layout, Row, Col, Card} from "antd"
 
 export default function ExperienceComponent() {
     
-    const mark = {
-
-    }
-    
     const {Content} = Layout
 
     return (
-        <Row>
-            <Col span={16}>
-                <Content>
-                    <Card>
+        <Content>
+            <Card>
+                <Row>
                     <p>Java</p>
-                    <Slider
+                    <Col span={12}>
+                        <Slider
                         max ={15}
                         defaultValue={7}
-                        disabled={true}>
-                            7 Years
-                    </Slider>
-                    </Card>
-                </Content>
-            </Col>
-        </Row>
-        
+                        disabled={true}
+                        />
+                    </Col> 
+                </Row>
+            </Card>
+        </Content>    
     )
 }

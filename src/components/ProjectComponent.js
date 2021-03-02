@@ -91,7 +91,7 @@ export const project7 = () => {
             <Card>
                 <MemeApp/>
             </Card>
-            <p>*Some images are more suitable</p>
+            <p>*Some images are more suitable than others</p>
         </Content>
     )
 }
