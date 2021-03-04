@@ -28,7 +28,7 @@ class App extends React.Component{
                 <HeaderComponent>
                     <Link to="/"></Link>
                 </HeaderComponent>
-                <Layout style={{ minHeight: '100vh' }}>
+                <Layout style={{ minHeight: '92vh' }}>
                     <SideBarComponent/>
                     <Layout>
                         <Switch>
