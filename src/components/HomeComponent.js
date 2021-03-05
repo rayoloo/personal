@@ -1,6 +1,6 @@
 import React from 'react'
 import {Layout, Card} from 'antd'
-
+import 'antd/dist/antd.css'
 
 export default function HomeComponent() {
     const {Content} = Layout

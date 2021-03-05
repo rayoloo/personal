@@ -2,7 +2,7 @@ import React , {useState} from 'react'
 import {Layout, Menu} from 'antd'
 import * as antdIcon from '@ant-design/icons';
 import {Link} from "react-router-dom"
-
+import 'antd/dist/antd.css'
 
 export default function SideBarComponent() {
 
@@ -21,7 +21,7 @@ export default function SideBarComponent() {
     return (
             <Sider collapsible collapsed={sidebar} onCollapse={showSidebar}>
                 <Menu theme="dark"mode="inline" onClick={currentKey} selectedKeys={[key]}>
-                    <Menu.Item key="1" icon={<antdIcon.PieChartOutlined />}>
+                    <Menu.Item key="1" icon={<antdIcon.CodeOutlined />}>
                         <Link to="/experience">Coding Experiences</Link>
                     </Menu.Item>
                     <SubMenu key="sub1" icon={<antdIcon.DesktopOutlined />} title="Projects">

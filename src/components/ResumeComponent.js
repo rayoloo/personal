@@ -1,7 +1,7 @@
 import React from 'react'
 import {Layout, Button} from 'antd'
 import { DownloadOutlined } from '@ant-design/icons';
-
+import 'antd/dist/antd.css'
 
 
 export default function ResumeComponent() {

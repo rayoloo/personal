@@ -1,6 +1,7 @@
 import React from 'react'
 import {Layout, Space} from 'antd'
 import * as antdIcon from '@ant-design/icons';
+import 'antd/dist/antd.css'
 
 export default function FooterComponent() {
     const {Footer} = Layout

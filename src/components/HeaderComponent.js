@@ -1,6 +1,7 @@
 import React from 'react'
 import {Layout} from 'antd'
 import {Link} from "react-router-dom";
+import 'antd/dist/antd.css'
 
 export default function HeaderComponent() {
     const {Header} = Layout
