@@ -13,7 +13,7 @@ export default function HomeComponent() {
             <Card>
                 <h2>About Me</h2>
                 <p>My name is Raymond Lam.</p>
-                <p>I have completed a bachelor in computer engineering (B.Eng) at Ryerson University. I am currently seeking job opportunities.</p>
+                <p>I like creating stuff.</p>
             </Card>
         </Content>
     )
