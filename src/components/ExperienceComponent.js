@@ -8,7 +8,7 @@ export default function ExperienceComponent() {
 
     return (
         <Content>
-            <Card >
+            <Card>
                 <Row>
                     <Col span={1}>Java</Col>
                     <Col span={14}>
@@ -25,7 +25,6 @@ export default function ExperienceComponent() {
                             </div>
                         </div>
                     </Col> 
-                    
                 </Row>
                 <Row>
                     <Col span={1}>Python</Col>
