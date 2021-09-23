@@ -1,28 +1,18 @@
-.title{
-    color:white;
-    text-align: center;
-    font-size: 48px;
+.title {
+	color: white;
+	text-align: center;
+	font-size: 48px;
 }
 
-#components-layout-demo-side .logo {
-    height: 32px;
-    margin: 16px;
-    background: rgba(255, 255, 255, 0.3);
+.bigIcon {
+	font-size: 24px;
 }
 
-.site-layout .site-layout-background {
-    background: #fff;
+.headerStyle {
+	height: 75px;
+	text-align: center;
 }
 
-.bigIcon{
-    font-size: 24px;
-}
-
-.headerStyle{
-    height: 75px;
-    text-align: center; 
-}
-
-.cardBG{
-    background-color: #f0f2f5;
+.cardBG {
+	background-color: #f0f2f5;
 }
