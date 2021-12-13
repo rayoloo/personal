@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout, Button, Form, Input, InputNumber } from 'antd'
-import emailjs from 'emailjs-com'
+import emailjs, { sendForm } from 'emailjs-com'
 
 export default function ContactForm() {
 	const { Content } = Layout
@@ -47,7 +47,7 @@ export default function ContactForm() {
 			<Form
 				{...layout}
 				name='nest-messages'
-				onFinish={onFinish}
+				onFinish={sendForm}
 				validateMessages={validateMessages}>
 				<Form.Item
 					name={['user', 'name']}
