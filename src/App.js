@@ -8,6 +8,7 @@ import SideBarComponent from './components/SideBarComponent'
 import FooterComponent from './components/FooterComponent'
 import HomeComponent from './components/HomeComponent'
 import ResumeComponent from './components/ResumeComponent'
+import ContactForm from './components/ContactForm'
 import {
 	project1,
 	project2,
@@ -30,20 +31,8 @@ class App extends React.Component {
 					<SideBarComponent />
 					<Layout>
 						<Switch>
-							{
-								//a way to pass a prop isAuthed to a Dashboard component when using <Route></Route>
-								//using render prop instead of component prop will mean the component wont get
-								//unnecessarily remounted like with component
-								/*
-                                <Route
-                                    path='/dashboard'
-                                    render={(props) => (
-                                        <Dashboard {...props} isAuthed={true} />
-                                    )}
-                                />
-                                */
-							}
 							<Route path='/' exact component={HomeComponent} />
+							<Route path='/contact' exact component={ContactForm} />
 							<Route path='/project/1' exact component={project1} />
 							<Route path='/project/2' exact component={project2} />
 							<Route path='/project/3' exact component={project3} />

@@ -23,7 +23,7 @@ export default function ResumeComponent() {
 			<div style={{ textAlign: 'center', height: '92%' }}>
 				<iframe
 					title='resume document'
-					src='https://docs.google.com/document/d/e/2PACX-1vTsws3RWgMXyKdfc_Jt05oksXem4x-FyqlWDGh8SQpOUW7uUfa9V7DrtVbxw9JqRR6WTfQ--ijkdxof/pub?embedded=true'
+					src='https://docs.google.com/document/d/e/2PACX-1vT1pH_bopEpWRAtSRtGPkByCPWiWWQrj4QhSBsP-rQM-pymPe2_-N4Vj-xZ7jQxIkuKiO4RpspLtm5Y/pub?embedded=true'
 					height='100%'
 					width='50%'
 				/>
