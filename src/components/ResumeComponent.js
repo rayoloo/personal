@@ -2,11 +2,12 @@ import React from 'react'
 import { Layout, Button } from 'antd'
 import { DownloadOutlined } from '@ant-design/icons'
 import 'antd/dist/antd.css'
+import resume from '../assets/New Resume.pdf'
 
 export default function ResumeComponent() {
 	const { Content } = Layout
 	const resumeLink =
-		'https://drive.google.com/u/0/uc?id=1BR-g3xiQqkBeL8NMKDqBhmsODcHQOFxc&export=download'
+		'https://drive.google.com/u/0/uc?id=15QugpYtZWoBUDYTokfDJUM0BYkWHkRz6&export=download'
 	return (
 		<Content>
 			<br />
@@ -23,7 +24,7 @@ export default function ResumeComponent() {
 			<div style={{ textAlign: 'center', height: '92%' }}>
 				<iframe
 					title='resume document'
-					src='https://docs.google.com/document/d/e/2PACX-1vT1pH_bopEpWRAtSRtGPkByCPWiWWQrj4QhSBsP-rQM-pymPe2_-N4Vj-xZ7jQxIkuKiO4RpspLtm5Y/pub?embedded=true'
+					src={resume}
 					height='100%'
 					width='50%'
 				/>
