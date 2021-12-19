@@ -1,13 +1,50 @@
-import React from 'react'
-import { Layout, Button, Form, Input, InputNumber } from 'antd'
-import emailjs, { sendForm } from 'emailjs-com'
+import React, { useState, useRef, useEffect } from 'react'
+import { Layout, Button, Form, Input, Alert } from 'antd'
+import emailjs from 'emailjs-com'
 
 export default function ContactForm() {
+	const [form, setForm] = useState({ name: '', user_email: '', message: '' })
+	const [showSuccess, setShowSuccess] = useState(false)
+	const [showError, setShowError] = useState(false)
+	const firstUpdate = useRef(true)
+
+	useEffect(() => {
+		if (firstUpdate.current) {
+			firstUpdate.current = false
+			return
+		}
+
+		sendEmail()
+		// eslint-disable-next-line
+	}, [form])
+
 	const { Content } = Layout
 
 	const layout = {
 		labelCol: { span: 8 },
-		wrapperCol: { span: 16 },
+		wrapperCol: { span: 8 },
+	}
+
+	function sendEmail() {
+		emailjs
+			.send(
+				'service_yiprfx3',
+				'template_jrlvu8b',
+				form,
+				'user_HER4EqR744mIdVMF6MTK0',
+			)
+			.then(
+				result => {
+					console.log(result.text)
+					setShowError(false)
+					setShowSuccess(true)
+				},
+				error => {
+					console.log(error.text)
+					setShowSuccess(false)
+					setShowError(true)
+				},
+			)
 	}
 
 	/* eslint-disable no-template-curly-in-string */
@@ -17,80 +54,56 @@ export default function ContactForm() {
 			email: '${label} is not a valid email!',
 			number: '${label} is not a valid number!',
 		},
-		number: {
-			range: '${label} must be between ${min} and ${max}',
-		},
 	}
 	/* eslint-enable no-template-curly-in-string */
 
-	const sendEmail = e => {
-		e.preventDefault()
-		emailjs
-			.sendForm(
-				'service_t3e7e2s',
-				'template_jrlvu8b',
-				e.target,
-				'user_HER4EqR744mIdVMF6MTK0',
-			)
-			.then(
-				result => {
-					console.log(result.text)
-				},
-				error => {
-					console.log(error.text)
-				},
-			)
+	const onFinish = values => {
+		setForm({
+			name: values.name,
+			user_email: values.email,
+			message: values.message,
+		})
+	}
+
+	function AlertShow() {
+		if (showSuccess) {
+			return <Alert message='Email Sent' type='success' closable />
+		} else if (showError) {
+			return <Alert message='Error Sending Email' type='error' closable />
+		} else {
+			return <div></div>
+		}
 	}
 
 	return (
 		<Content>
+			<AlertShow />
+			<br />
+			<br />
+			<br />
 			<Form
 				{...layout}
 				name='nest-messages'
-				onFinish={sendForm}
+				onFinish={onFinish}
 				validateMessages={validateMessages}>
-				<Form.Item
-					name={['user', 'name']}
-					label='Name'
-					rules={[{ required: true }]}>
+				<Form.Item name='name' label='Name' rules={[{ required: true }]}>
 					<Input />
 				</Form.Item>
 				<Form.Item
-					name={['user', 'email']}
+					name='email'
 					label='Email'
-					rules={[{ type: 'email' }]}>
+					rules={[{ type: 'email', required: true }]}>
 					<Input />
 				</Form.Item>
-				<Form.Item
-					name={['user', 'age']}
-					label='Age'
-					rules={[{ type: 'number', min: 0, max: 99 }]}>
-					<InputNumber />
-				</Form.Item>
-				<Form.Item name={['user', 'website']} label='Website'>
-					<Input />
-				</Form.Item>
-				<Form.Item name={['user', 'introduction']} label='Introduction'>
+				<Form.Item name='message' label='Message' rules={[{ required: true }]}>
 					<Input.TextArea />
 				</Form.Item>
-				<Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
+				<Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 10 }}>
 					<Button type='primary' htmlType='submit'>
 						Submit
 					</Button>
 				</Form.Item>
 			</Form>
-			<form onSubmit={sendEmail}>
-				<label>Name</label>
-				<input type='text' name='user_name' />
-				<br />
-				<label>Email</label>
-				<input type='email' name='user_email' />
-				<br />
-				<label>Message</label>
-				<textarea name='message' />
-				<br />
-				<input type='submit' value='Send' />
-			</form>
 		</Content>
 	)
 }

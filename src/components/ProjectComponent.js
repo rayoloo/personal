@@ -2,36 +2,56 @@ import React from 'react'
 import { Layout, Card, Carousel } from 'antd'
 import MemeApp from '../memeGenProject/MemeApp'
 import 'antd/dist/antd.css'
+import IMAGES from '../assets/Images'
+
 const { Content } = Layout
-const contentStyle = {
-	height: '160px',
-	color: '#fff',
-	lineHeight: '160px',
-	textAlign: 'center',
-	background: '#364d79',
-}
 
 export const project1 = () => {
 	return (
 		<Content>
 			<Card className='cardBG'>
-				<Carousel autoplay>
-					<div>
-						<h3 style={contentStyle}>1</h3>
-					</div>
-					<div>
-						<h3 style={contentStyle}>2</h3>
-					</div>
-					<div>
-						<h3 style={contentStyle}>3</h3>
-					</div>
-					<div>
-						<h3 style={contentStyle}>4</h3>
-					</div>
-				</Carousel>
 				<h2>
 					<u>RFID Security Door – Arduino</u>
 				</h2>
+				<Carousel autoplay='true'>
+					<div>
+						<img
+							src={IMAGES.rfid1}
+							alt=''
+							width='600'
+							height='300'
+							className='center'
+						/>
+					</div>
+					<div>
+						<img
+							src={IMAGES.rfid2}
+							alt=''
+							width='600'
+							height='300'
+							className='center'
+						/>
+					</div>
+					<div>
+						<img
+							src={IMAGES.rfid3}
+							alt=''
+							width='600'
+							height='300'
+							className='center'
+						/>
+					</div>
+					<div>
+						<img
+							src={IMAGES.rfid4}
+							alt=''
+							width='600'
+							height='300'
+							className='center'
+						/>
+					</div>
+				</Carousel>
+
 				<br />
 				<p>- Created a motorized door that opened for the specific RFID keys</p>
 			</Card>

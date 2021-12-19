@@ -56,7 +56,7 @@ export default function SideBarComponent() {
 				<Menu.Item key='2' icon={<antdIcon.FilePdfOutlined />}>
 					<Link to='/resume'>Resume</Link>
 				</Menu.Item>
-				<Menu.Item key='10' icon={<antdIcon.MessageOutlined />}>
+				<Menu.Item key='10' icon={<antdIcon.MailOutlined />}>
 					<Link to='/contact'>Contact Me</Link>
 				</Menu.Item>
 			</Menu>

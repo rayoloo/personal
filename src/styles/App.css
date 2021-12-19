@@ -16,3 +16,11 @@
 .cardBG {
 	background-color: #f0f2f5;
 }
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+/*# sourceMappingURL=App.css.map */

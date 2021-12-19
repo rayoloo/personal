@@ -7,10 +7,10 @@ export default function ExperienceComponent() {
 
 	return (
 		<Content>
-			<h1>SCRAP </h1>
 			<Card>
+				<h1 className='headerStyle'>SCRAP THIS PAGE</h1>
 				<Row>
-					<Col span={1}>Java</Col>
+					<Col span={2}>Java</Col>
 					<Col span={14}>
 						<div class='progress'>
 							<div
@@ -22,7 +22,7 @@ export default function ExperienceComponent() {
 					</Col>
 				</Row>
 				<Row>
-					<Col span={1}>C</Col>
+					<Col span={2}>C</Col>
 					<Col span={14}>
 						<div class='progress'>
 							<div
@@ -33,7 +33,7 @@ export default function ExperienceComponent() {
 					</Col>
 				</Row>
 				<Row>
-					<Col span={1}>Python</Col>
+					<Col span={2}>Python</Col>
 					<Col span={14}>
 						<div class='progress'>
 							<div
@@ -44,7 +44,7 @@ export default function ExperienceComponent() {
 					</Col>
 				</Row>
 				<Row>
-					<Col span={1}>VHDL</Col>
+					<Col span={2}>VHDL</Col>
 					<Col span={14}>
 						<div class='progress'>
 							<div
@@ -55,7 +55,7 @@ export default function ExperienceComponent() {
 					</Col>
 				</Row>
 				<Row>
-					<Col span={1}>MATLAB</Col>
+					<Col span={2}>MATLAB</Col>
 					<Col span={14}>
 						<div class='progress'>
 							<div
@@ -66,7 +66,7 @@ export default function ExperienceComponent() {
 					</Col>
 				</Row>
 				<Row>
-					<Col span={1}>HTML</Col>
+					<Col span={2}>HTML</Col>
 					<Col span={14}>
 						<div class='progress'>
 							<div
@@ -77,7 +77,7 @@ export default function ExperienceComponent() {
 					</Col>
 				</Row>
 				<Row>
-					<Col span={1}>CSS</Col>
+					<Col span={2}>CSS</Col>
 					<Col span={14}>
 						<div class='progress'>
 							<div
@@ -88,7 +88,7 @@ export default function ExperienceComponent() {
 					</Col>
 				</Row>
 				<Row>
-					<Col span={1}>JavaScript</Col>
+					<Col span={2}>JavaScript</Col>
 					<Col span={14}>
 						<div class='progress'>
 							<div
@@ -99,7 +99,7 @@ export default function ExperienceComponent() {
 					</Col>
 				</Row>
 				<Row>
-					<Col span={1}>React</Col>
+					<Col span={2}>React</Col>
 					<Col span={14}>
 						<div class='progress'>
 							<div
@@ -110,7 +110,7 @@ export default function ExperienceComponent() {
 					</Col>
 				</Row>
 				<Row>
-					<Col span={1}>SQL</Col>
+					<Col span={2}>SQL</Col>
 					<Col span={14}>
 						<div class='progress'>
 							<div

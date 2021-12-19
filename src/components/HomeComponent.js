@@ -10,13 +10,25 @@ export default function HomeComponent() {
 		<div>
 			<Content>
 				<Card>
-					<h2>Welcome to my site!</h2>
+					<h1>Welcome to my site!</h1>
 					<p>Learn more about me through browsing my website</p>
 				</Card>
 				<Card>
 					<h2>About Me</h2>
 					<p>My name is Raymond.</p>
 					<p>I like making cool stuff.</p>
+				</Card>
+				<Card>
+					<h2>Technical Skills</h2>
+				</Card>
+				<Card>
+					<h2>Education?</h2>
+				</Card>
+				<Card>
+					<h2>Projects</h2>
+				</Card>
+				<Card>
+					<h2>Contact?</h2>
 				</Card>
 			</Content>
 		</div>
