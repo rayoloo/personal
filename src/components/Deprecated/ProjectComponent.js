@@ -1,8 +1,8 @@
 import React from 'react'
 import { Layout, Card, Carousel } from 'antd'
-import MemeApp from '../memeGenProject/MemeApp'
+import MemeApp from '../../memeGenProject/MemeApp'
 import 'antd/dist/antd.css'
-import IMAGES from '../assets/Images'
+import IMAGES from '../../assets/Images'
 
 const { Content } = Layout
 
@@ -16,34 +16,7 @@ export const project1 = () => {
 				<Carousel autoplay='true'>
 					<div>
 						<img
-							src={IMAGES.rfid1}
-							alt=''
-							width='600'
-							height='300'
-							className='center'
-						/>
-					</div>
-					<div>
-						<img
-							src={IMAGES.rfid2}
-							alt=''
-							width='600'
-							height='300'
-							className='center'
-						/>
-					</div>
-					<div>
-						<img
-							src={IMAGES.rfid3}
-							alt=''
-							width='600'
-							height='300'
-							className='center'
-						/>
-					</div>
-					<div>
-						<img
-							src={IMAGES.rfid4}
+							src={IMAGES.rfidCover}
 							alt=''
 							width='600'
 							height='300'

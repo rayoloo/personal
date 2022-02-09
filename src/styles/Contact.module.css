@@ -1,0 +1,14 @@
+.container {
+	background: rgb(240, 233, 233);
+}
+
+.Contact {
+	background: rgb(240, 233, 233);
+	padding: 2rem 0;
+	width: 100%;
+	height: 90vh;
+}
+
+.Contact h1 {
+	font-size: 5rem;
+}
