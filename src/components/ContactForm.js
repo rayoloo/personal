@@ -79,7 +79,8 @@ export default function ContactForm() {
 		<div className={styles.Contact} id='contact'>
 			<h1>Contact Me</h1>
 			<div className={styles.container}>
-				<AlertShow />
+				<br />
+				<br />
 				<Form
 					{...layout}
 					name='nest-messages'
