@@ -15,24 +15,19 @@ a {
 
 body {
 	font-family: 'Rubik', sans-serif;
-}
-
-html,
-body {
 	width: 100%;
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
-	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-	height: 0;
-	width: 0; /* Remove scrollbar space */
+	height: 0; /* horizontal scrollbar width*/
+	width: 0; /* Remove scrollbar width */
 	background: transparent; /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-	background: #ff0000;
+	background: #ff0000; /*color of the scroll bar*/
 }

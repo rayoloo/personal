@@ -1,32 +1,54 @@
 import React, { useState } from 'react'
 import styles from '../styles/navbar.module.css'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
 	const [click, setClick] = useState(false)
 	const handleClick = () => setClick(!click)
 	const closeMenu = () => setClick(false)
+
 	return (
 		<div className={styles.navbar}>
-			<a href='#hero'>
+			<Link
+				to='hero'
+				smooth={true}
+				offset={0}
+				duration={500}
+				onClick={closeMenu}>
 				<h1 className={styles.header}>Raymond Lam</h1>
-			</a>
+			</Link>
 
 			<ul className={click ? `${styles.nav} ${styles.active}` : styles.nav}>
 				<li>
-					<a href='#about' onClick={closeMenu}>
+					<Link
+						to='about'
+						smooth={true}
+						offset={0}
+						duration={500}
+						onClick={closeMenu}>
 						About
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a href='#projects' onClick={closeMenu}>
+					<Link
+						to='projects'
+						smooth={true}
+						offset={0}
+						duration={500}
+						onClick={closeMenu}>
 						Projects
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a href='#contact' onClick={closeMenu}>
+					<Link
+						to='contact'
+						smooth={true}
+						offset={-15}
+						duration={500}
+						onClick={closeMenu}>
 						Contact
-					</a>
+					</Link>
 				</li>
 			</ul>
 			<div onClick={handleClick} className={styles.hamburger}>
