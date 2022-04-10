@@ -50,7 +50,7 @@ export default function ContactForm() {
 							placeholder='Type a short message here.'
 							required={true}
 						/>
-						<input type='submit' value='Send' />
+						<input className={styles.button} type='submit' value='Send' />
 					</form>
 				</div>
 				<div className={sentPage ? styles.show : styles.hide}>

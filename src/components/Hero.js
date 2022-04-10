@@ -3,9 +3,9 @@ import styles from '../styles/Hero.module.css'
 
 const Hero = () => {
 	return (
-		<div>
-			<div className={styles.temp} id='hero'>
-				Hero
+		<div className={styles.temp} id='hero'>
+			<div>
+				<h1>Welcome</h1>
 			</div>
 		</div>
 	)
