@@ -1,12 +1,38 @@
-.temp {
+.hero {
 	width: 100%;
 	height: 100vh;
-	background-color: #5da2d5;
-	font-size: 5rem;
-	font-weight: 500;
+	font-size: 2.5rem;
+	background-color: rgba(0, 0, 0, 0.377);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-top: 80px;
+	padding-left: 3rem;
 	scroll-margin-top: 8vh;
+	color: rgb(252, 239, 239);
 }
+
+.hero:before {
+	content: '';
+	background-image: url(../assets/herocropped-modified.jpg);
+	background-position: 50% 30%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+@media screen and (max-width: 640px) {
+}
+
+/* 
+#121118
+#EEA47F - black text
+#684A8E
+#F3ECE4 - black text
+#4B4D72
+ */

@@ -6,14 +6,13 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
-	background: rgba(0, 0, 0, 1);
+	background: #121118;
 	z-index: 10;
 }
 
 .navbar .header {
-	color: #fff;
+	color: #f3ece4;
 	padding-left: 2rem;
-	padding-top: 1rem;
 	font-size: 2rem;
 	display: flex;
 	justify-content: center;
@@ -25,7 +24,6 @@
 	align-items: center;
 	list-style-type: none;
 	padding-right: 2rem;
-	padding-top: 1rem;
 }
 
 .navbar .nav li {
@@ -35,7 +33,7 @@
 .navbar .nav li a {
 	font-size: 1.1rem;
 	font-weight: 500;
-	color: #fff;
+	color: #f3ece4;
 }
 
 .navbar .nav li a:visited,
@@ -49,7 +47,7 @@ a:active {
 }
 
 .icon {
-	color: #f4eeff;
+	color: #f3ece4;
 	font-size: 1.5rem;
 }
 

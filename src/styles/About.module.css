@@ -1,11 +1,147 @@
+:root {
+	--red: hsl(0, 78%, 62%);
+	--cyan: hsl(180, 62%, 55%);
+	--orange: hsl(34, 97%, 64%);
+	--blue: hsl(212, 86%, 64%);
+	--varyDarkBlue: hsl(234, 12%, 34%);
+	--grayishBlue: hsl(229, 6%, 66%);
+	--veryLightGray: hsl(0, 0%, 98%);
+	--weight1: 200;
+	--weight2: 400;
+	--weight3: 600;
+}
+
 .temp {
 	width: 100%;
-	height: 100vh;
-	background-color: #f3d250;
-	font-size: 5rem;
+	height: 100%;
+	/* background-color: #f3d250; */
+	font-size: 1.7rem;
 	font-weight: 500;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-color: #121118;
+	color: #f3ecb7;
+
 	scroll-margin-top: 8vh;
+	padding-left: 2rem;
+	padding-top: 3rem;
+}
+
+.fourCards {
+	margin: 0 auto;
+	width: 100%;
+	padding-bottom: 3rem;
+}
+/* 
+#121118
+#EEA47F - black text
+#684A8E
+#F3ECE4 - black text
+#4B4D72
+ */
+
+@media (max-width: 400px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 100px;
+	font-size: 15px;
+	line-height: 300%;
+	color: var(--lightGray);
+}
+
+.header h1:first-of-type {
+	font-weight: var(--weight1);
+	color: var(--varyDarkBlue);
+}
+
+.header h1:last-of-type {
+	color: var(--varyDarkBlue);
+}
+
+.header p {
+	margin: 0 auto;
+	line-height: 2;
+	color: var(--grayishBlue);
+}
+
+.box h2 {
+	font-size: 2rem;
+	padding-bottom: 1rem;
+	color: var(--grayishBlue);
+}
+
+.box p {
+	color: var(--grayishBlue);
+	font-size: 1rem;
+}
+
+.box {
+	border-radius: 5px;
+	box-shadow: 0px 10px 40px -20px var(--grayishBlue);
+	padding: 25px;
+	margin: 20px;
+	background-color: #f3ecb7;
+}
+
+img {
+	float: right;
+}
+
+@media (max-width: 450px) {
+	.box {
+		height: 200px;
+	}
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+	.box {
+		text-align: center;
+		height: 180px;
+	}
+}
+
+.cyan {
+	border-top: 3px solid var(--cyan);
+}
+.red {
+	border-top: 3px solid var(--red);
+}
+.blue {
+	border-top: 3px solid var(--blue);
+}
+.orange {
+	border-top: 3px solid var(--orange);
+}
+
+.header h2 {
+	color: var(--varyDarkBlue);
+	font-weight: var(--weight3);
+}
+
+@media (min-width: 950px) {
+	.row1-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.row2-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.box-down {
+		position: relative;
+		top: 150px;
+	}
+	.box {
+		width: 20%;
+	}
+	.header p {
+		width: 30%;
+	}
 }
