@@ -1,5 +1,5 @@
 import React from 'react'
-import * as antdIcon from '@ant-design/icons'
+import { GithubOutlined } from '@ant-design/icons'
 import styles from '../styles/Footer.module.css'
 
 export default function FooterComponent() {
@@ -9,7 +9,7 @@ export default function FooterComponent() {
 				<p>©2022 Raymond Lam</p>
 				<div style={{ display: 'flex', justifyContent: 'center' }}>
 					<a href='https://github.com/rayoloo'>
-						<antdIcon.GithubOutlined style={{ fontSize: 20, color: '#fff' }} />
+						<GithubOutlined style={{ fontSize: 20, color: '#fff' }} />
 					</a>
 				</div>
 			</div>
