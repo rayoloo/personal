@@ -25,7 +25,6 @@ const Projects = () => {
 							tag2Style='tag-purple'
 							imageLink={food}
 							heading={'Gourmet Today'}
-							subheading={'Concept Website'}
 							text={
 								'Online meal preparation service for companies with a variety of restaurant with a click of a button.'
 							}
@@ -37,7 +36,6 @@ const Projects = () => {
 							tag1Style='tag-red'
 							imageLink={defi}
 							heading={'DeFi'}
-							subheading={'Concept Website'}
 							text={'Decentralized Trading'}
 						/>
 					</div>
@@ -47,7 +45,6 @@ const Projects = () => {
 							tag1Style='tag-red'
 							imageLink={realestate}
 							heading={'Real Estate'}
-							subheading={'Concept Website'}
 							text={'Home to Rent or Sell.'}
 						/>
 					</div>
@@ -57,7 +54,6 @@ const Projects = () => {
 							tag1Style='tag-red'
 							imageLink={space}
 							heading={'Space Exploration'}
-							subheading={'Concept Website'}
 							text={'Looking for accommodation while space traveling?'}
 						/>
 					</div>
