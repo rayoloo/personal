@@ -9,6 +9,7 @@ import defi from '../assets/defi.png'
 import realestate from '../assets/realestate.png'
 import space from '../assets/space.png'
 import pokedex from '../assets/pokedex.png'
+import stock from '../assets/stock.png'
 
 const Projects = () => {
 	return (
@@ -37,7 +38,7 @@ const Projects = () => {
 							imageLink={defi}
 							heading={'DeFi'}
 							subheading={'Concept Website'}
-							text={'cool looking website.'}
+							text={'Decentralized Trading'}
 						/>
 					</div>
 					<div className={styles.card}>
@@ -64,11 +65,11 @@ const Projects = () => {
 						<Card
 							tag1='API'
 							tag1Style='tag-purple'
-							tag2='Website'
-							tag2Style='tag-teal2'
+							tag2='Website Design'
+							tag2Style='tag-red'
 							imageLink={pokedex}
 							heading={'Pokedex'}
-							text={'Encyclopedia website of Pokemon powered by PokeAPI.'}
+							text={'Encyclopedia of Pokemon powered by PokeAPI.'}
 						/>
 					</div>
 					<div className={styles.card}>
@@ -84,24 +85,14 @@ const Projects = () => {
 					</div>
 					<div className={styles.card}>
 						<Card
-							imageLink=''
+							imageLink={stock}
 							tag1='Python'
 							tag1Style='tag-yellow'
 							tag2='Tensorflow'
 							tag2Style='tag-green'
 							heading={'Stock Forecast'}
 							text={
-								'Forecast the closing value of a single security over the next 30 days.'
-							}
-						/>
-					</div>
-					<div className={styles.card}>
-						<Card
-							heading={'Bank Application'}
-							tag1='Java'
-							tag1Style='tag-pink'
-							text={
-								'OOP Project, Manager and Clients Login and Perform their respective tasks'
+								'Forecast the closing value of a single security for the upcoming 30 days.'
 							}
 						/>
 					</div>
@@ -111,7 +102,7 @@ const Projects = () => {
 							tag1='Arduino'
 							tag1Style='tag-teal'
 							heading={'RFID Security Door'}
-							text={'Door opens to approved key fobs'}
+							text={'Motorized door that opens to approved key fobs'}
 						/>
 					</div>
 				</div>
