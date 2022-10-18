@@ -24,7 +24,7 @@ const Projects = () => {
 							tag2='Backend'
 							tag2Style='tag-purple'
 							imageLink={food}
-							heading={'Made4'}
+							heading={'Gourmet Today'}
 							subheading={'Concept Website'}
 							text={
 								'Online meal preparation service for companies with a variety of restaurant with a click of a button.'
