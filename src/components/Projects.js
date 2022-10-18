@@ -2,7 +2,6 @@ import React from 'react'
 import styles from '../styles/Project.module.css'
 import Card from '../components/AboutCards'
 
-import Header1 from '../assets/zach-miller-Hma7CDLnz00-unsplash.jpg'
 import RFIDpicture from '../assets/rfid/cover.jpg'
 import spotify from '../assets/spotify.png'
 import defi from '../assets/defi.png'
@@ -10,6 +9,7 @@ import realestate from '../assets/realestate.png'
 import space from '../assets/space.png'
 import pokedex from '../assets/pokedex.png'
 import stock from '../assets/stock.png'
+import food from '../assets/Food.png'
 
 const Projects = () => {
 	return (
@@ -23,7 +23,7 @@ const Projects = () => {
 							tag1Style='tag-red'
 							tag2='Backend'
 							tag2Style='tag-purple'
-							imageLink={Header1}
+							imageLink={food}
 							heading={'Made4'}
 							subheading={'Concept Website'}
 							text={
