@@ -7,49 +7,26 @@ const About = () => {
 			<div>
 				<h1>About Me</h1>
 				<br />
-				<p>Computer Engineering Bachelors</p>
-				<br />
-
 				<p>
-					Digital Systems, Object-Orientated Programming, Computer Architecture,
-					Operating Systems, Embedded Systems, Computer Networks, Computer
-					Vision, Database Manipulation, and Web Development.
+					My name is Raymond, and this is my website that I created to provide
+					you with some more information about myself.
 				</p>
-
-				<br />
-				<p>Technical Skills/Experience for the following:</p>
-				<list>
-					<li>
-						Java, C, Python, VHDL, MIPS Assembly Language, Matlab, Arduino, SQL,
-						Git
-					</li>
-					<li>
-						HTML, CSS, SASS, JavaScript,React, React Native, Flask, Express,
-						Django, NextJS
-					</li>
-					<li>
-						Microsoft Office, Visual Studio Code, NetBeans, Eclipse, Ubuntu,
-						Figma
-					</li>
-				</list>
 			</div>
 			<br />
 			<br />
 			<div className={styles.fourCards}>
-				<div className={styles['header']}>
-					<h1>Reliable, efficient delivery</h1>
-					<h1>Powered by Technology</h1>
-
-					<p>
-						Our Artificial Intelligence powered tools use millions of project
-						data points to ensure that your project is successful
-					</p>
-				</div>
 				<div className={styles['row1-container']}>
 					<div
 						className={`${styles.box} ${styles['box-down']} ${styles.cyan} `}>
-						<h2>Supervisor</h2>
-						<p>Monitors activity to identify project roadblocks</p>
+						<h2>Technical Skills</h2>
+						<p>
+							Web Development, Object-Orientated Programming, Digital Systems,
+							Computer Architecture,and Relational Database Manipulation
+						</p>
+						<p>
+							Microsoft Office, Visual Studio Code, NetBeans, Eclipse,Ubuntu,
+							Figma, SQLite, Git, Matlab,and Arduino
+						</p>
 						<img
 							src='https://assets.codepen.io/2301174/icon-supervisor.svg'
 							alt=''
@@ -57,10 +34,10 @@ const About = () => {
 					</div>
 
 					<div className={`${styles.box} ${styles.red} `}>
-						<h2>Team Builder</h2>
+						<h2>Web Development</h2>
 						<p>
-							Scans our talent network to create the optimal team for your
-							project
+							HTML, CSS, JS, SASS, TypeScript, React, React Native, Figma,
+							Flask, Express, Django, and NextJS
 						</p>
 						<img
 							src='https://assets.codepen.io/2301174/icon-team-builder.svg'
@@ -69,9 +46,16 @@ const About = () => {
 					</div>
 
 					<div className={`${styles.box} ${styles['box-down']} ${styles.blue}`}>
-						<h2>Calculator</h2>
+						<h2>Education</h2>
+						<p>Computer Engineering Graduate</p>
+						<br></br>
 						<p>
-							Uses data from past projects to provide better delivery estimates
+							<u>Relevant Courses:</u>
+						</p>
+						<p>
+							Digital Systems, Object-Orientated Programming, Computer
+							Architecture, Operating Systems, Embedded Systems, Computer
+							Networks, and Computer Vision
 						</p>
 						<img
 							src='https://assets.codepen.io/2301174/icon-calculator.svg'
@@ -81,8 +65,13 @@ const About = () => {
 				</div>
 				<div className={styles['row2-container']}>
 					<div className={`${styles.box} ${styles.orange}`}>
-						<h2>Karma</h2>
-						<p>Regularly evaluates our talent to ensure quality</p>
+						<h2>Coding Languages</h2>
+						<p>
+							Java, C, Python, VHDL, MIPS Assembly Language, JS, Typescript,and
+							SQLite
+						</p>
+						<br />
+						<p>Learning C++</p>
 						<img
 							src='https://assets.codepen.io/2301174/icon-karma.svg'
 							alt=''
