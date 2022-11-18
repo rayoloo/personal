@@ -54,7 +54,8 @@ export default function ContactForm() {
 					</form>
 				</div>
 				<div className={sentPage ? styles.show : styles.hide}>
-					Email Sent <AiOutlineCheckCircle />
+					<AiOutlineCheckCircle className={styles.lower} />
+					Email Sent!
 				</div>
 			</div>
 		</div>

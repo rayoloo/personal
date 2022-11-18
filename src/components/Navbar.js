@@ -10,14 +10,24 @@ const Navbar = () => {
 
 	return (
 		<div className={styles.navbar}>
-			<Link
-				to='hero'
-				smooth={true}
-				offset={0}
-				duration={500}
-				onClick={closeMenu}>
-				<h1 className={styles.header}>Raymond Lam</h1>
-			</Link>
+			<div className={styles.mobileHeader}>
+				<div onClick={handleClick} className={styles.hamburger}>
+					{click ? (
+						<AiOutlineClose className={styles.icon} />
+					) : (
+						<AiOutlineMenu className={styles.icon} />
+					)}
+				</div>
+
+				<Link
+					to='hero'
+					smooth={true}
+					offset={0}
+					duration={500}
+					onClick={closeMenu}>
+					<h1 className={styles.header}>Raymond Lam</h1>
+				</Link>
+			</div>
 
 			<ul className={click ? `${styles.nav} ${styles.active}` : styles.nav}>
 				<li>
@@ -51,13 +61,6 @@ const Navbar = () => {
 					</Link>
 				</li>
 			</ul>
-			<div onClick={handleClick} className={styles.hamburger}>
-				{click ? (
-					<AiOutlineClose className={styles.icon} />
-				) : (
-					<AiOutlineMenu className={styles.icon} />
-				)}
-			</div>
 		</div>
 	)
 }

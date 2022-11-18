@@ -7,10 +7,17 @@ const About = () => {
 			<div>
 				<h1>About Me</h1>
 				<br />
-				<p>
-					My name is Raymond, and this is my website that I created to provide
-					you with some more information about myself.
-				</p>
+				<div className={styles.aboutBox}>
+					<p>My name is Raymond.</p>
+					<p>
+						I am a computer engineering graduate seeking for development
+						opportunities.
+					</p>
+					<p>
+						This is my website that I created to provide more information about
+						myself.
+					</p>
+				</div>
 			</div>
 			<br />
 			<br />
@@ -57,6 +64,7 @@ const About = () => {
 							Architecture, Operating Systems, Embedded Systems, Computer
 							Networks, and Computer Vision
 						</p>
+						<br />
 						<img
 							src='https://assets.codepen.io/2301174/icon-calculator.svg'
 							alt=''
