@@ -30,7 +30,7 @@ const About = () => {
 					</div>
 					<br />
 					<div className={styles.Accordion}>
-						<Accordion defaultIndex={[0]} allowMultiple>
+						<Accordion allowMultiple>
 							<AccordionItem>
 								<h2>
 									<AccordionButton>
