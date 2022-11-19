@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/About.module.css'
+import Accordion from './Accordion'
 
 const About = () => {
 	return (
@@ -20,20 +21,36 @@ const About = () => {
 				</div>
 			</div>
 			<br />
+			<Accordion />
 			<br />
+
 			<div className={styles.fourCards}>
+				{/* drop down menu */}
 				<div className={styles['row1-container']}>
 					<div
 						className={`${styles.box} ${styles['box-down']} ${styles.cyan} `}>
 						<h2>Technical Skills</h2>
-						<p>
-							Web Development, Object-Orientated Programming, Digital Systems,
-							Computer Architecture,and Relational Database Manipulation
-						</p>
-						<p>
-							Microsoft Office, Visual Studio Code, NetBeans, Eclipse,Ubuntu,
-							Figma, SQLite, Git, Matlab,and Arduino
-						</p>
+						<h3>Skills:</h3>
+						<ul>
+							<li>Web Development</li>
+							<li>Object-Orientated Programming</li>
+							<li>Digital Systems</li>
+							<li>Computer Architecture</li>
+							<li>Relational Database</li>
+						</ul>
+						<h3>Software:</h3>
+						<ul>
+							<li>Microsoft Office</li>
+							<li>Visual Studio Code</li>
+							<li>NetBeans</li>
+							<li>Eclipse</li>
+							<li>Ubuntu</li>
+							<li>SQLite</li>
+							<li>Figma</li>
+							<li>Git</li>
+							<li>Matlab</li>
+							<li>Arduino</li>
+						</ul>
 						<img
 							src='https://assets.codepen.io/2301174/icon-supervisor.svg'
 							alt=''

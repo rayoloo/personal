@@ -8,21 +8,22 @@ const AboutCard = props => {
 				<img src={props.imageLink} alt='project header' />
 			</div>
 			<div className={styles['card-body']}>
-				{props.tag1 != null && props.tag2 == null && (
-					<span className={styles[props.tag1Style]}>{props.tag1}</span>
-				)}
-				{props.tag2 != null && (
-					<div>
-						<p>
-							<span className={styles[props.tag1Style]}>{props.tag1}</span>
-							{'  '}
-							<span className={styles[props.tag2Style]}>{props.tag2}</span>
-						</p>
-					</div>
-				)}
+				<div className={styles['card-tag']}>
+					{props.tag1 != null && props.tag2 == null && (
+						<span className={styles[props.tag1Style]}>{props.tag1}</span>
+					)}
+					{props.tag2 != null && (
+						<div>
+							<p>
+								<span className={styles[props.tag1Style]}>{props.tag1}</span>
+								{'  '}
+								<span className={styles[props.tag2Style]}>{props.tag2}</span>
+							</p>
+						</div>
+					)}
+				</div>
 				<h3>{props.heading}</h3>
-				{props.subheading != null && <h5>{props.subheading}</h5>}
-				<p>{props.text}</p>
+				<p className={styles.cardText}>{props.text}</p>
 			</div>
 		</div>
 	)

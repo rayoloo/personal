@@ -35,14 +35,13 @@ export default function ContactForm() {
 			<div className={styles.Contact}>
 				<h1>Contact Me</h1>
 				<br />
-				<br />
 				<div className={sentPage ? styles.hide : styles.container}>
 					<form className={styles.form} ref={form} onSubmit={sendEmail}>
-						<label>Name:</label>
+						<label>Name</label>
 						<input type='text' id='name' name='name' required={true} />
-						<label>Email:</label>
+						<label>Email</label>
 						<input type='email' id='email ' name='email' required={true} />
-						<label>Message:</label>
+						<label>Message</label>
 						<textarea
 							id='message'
 							name='message'

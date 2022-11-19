@@ -13,7 +13,7 @@ import food from '../assets/Food.png'
 
 const Projects = () => {
 	return (
-		<div className={`${styles.temp} ${styles.anchor}`} id='projects'>
+		<div className={styles.temp} id='projects'>
 			<div className={styles.projectSection}>
 				<h1>Projects</h1>
 				<div className={styles.cardContainer}>
@@ -70,7 +70,7 @@ const Projects = () => {
 					</div>
 					<div className={styles.card}>
 						<Card
-							tag1='FullStack'
+							tag1='FullStack Application'
 							tag1Style='tag-orange'
 							tag2='API'
 							tag2Style='tag-purple'
