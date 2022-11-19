@@ -56,14 +56,14 @@
 	height: 100%;
 	border-radius: 5px;
 	padding: 2rem;
-	flex: 35%;
+	flex: 40%;
 }
 
 .Accordion {
 	margin: 0 auto;
 	width: 100%;
 	padding-bottom: 3rem;
-	flex: 55%;
+	flex: 60%;
 }
 
 .aHeader {
@@ -86,7 +86,8 @@ img {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 	.aboutContainer {
-		display: block;
+		display: flex;
+		flex-direction: column;
 	}
 }
 

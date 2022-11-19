@@ -29,7 +29,6 @@ const About = () => {
 						</p>
 					</div>
 					<br />
-					<br />
 					<div className={styles.Accordion}>
 						<Accordion defaultIndex={[0]} allowMultiple>
 							<AccordionItem>
