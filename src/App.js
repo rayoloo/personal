@@ -7,16 +7,18 @@ import About from './components/About'
 import Project from './components/Projects'
 import './styles/App.css'
 
+import { ChakraProvider } from '@chakra-ui/react'
+
 const App = () => {
 	return (
-		<>
+		<ChakraProvider>
 			<Navbar />
 			<Hero />
 			<About />
 			<Project />
 			<ContactForm />
 			<FooterComponent />
-		</>
+		</ChakraProvider>
 	)
 }
 

@@ -35,7 +35,7 @@ textarea {
 	font-size: 1.2rem;
 	resize: none;
 	border-radius: 10px;
-	border: solid 2px #767676 !important;
+	border: solid 2px #767676;
 }
 
 .show {
@@ -45,6 +45,13 @@ textarea {
 	padding-top: 6rem;
 	text-align: center;
 	color: rgb(128, 189, 36);
+}
+
+.area {
+	resize: none;
+	padding-left: 0.5rem;
+	padding-top: 0.5rem;
+	font-family: 'Poppins';
 }
 
 .lower {
@@ -68,6 +75,7 @@ textarea {
 	max-width: 250px;
 	margin: auto;
 	border-radius: 10px;
+	margin-top: 1.5rem;
 }
 
 .button:hover {
@@ -75,10 +83,10 @@ textarea {
 	color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
 	.Contact h1 {
 		padding-top: 8vh;
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 
 	form {
@@ -89,5 +97,9 @@ textarea {
 		padding-right: 3rem;
 		margin: auto;
 		max-width: 550px;
+	}
+
+	.Contact {
+		height: 95vh;
 	}
 }

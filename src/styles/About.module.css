@@ -33,6 +33,10 @@
 	padding-right: 2rem;
 	padding-top: 3rem;
 }
+.aboutContainer {
+	display: flex;
+	gap: 1rem;
+}
 
 .aboutBox {
 	background-color: #da2020;
@@ -40,12 +44,14 @@
 	height: 100%;
 	border-radius: 5px;
 	padding: 2rem;
+	flex: 35%;
 }
 
 .fourCards {
 	margin: 0 auto;
 	width: 100%;
 	padding-bottom: 3rem;
+	flex: 55%;
 }
 
 .box {
@@ -146,7 +152,10 @@ img {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+	.aboutContainer {
+		display: block;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

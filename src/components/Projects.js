@@ -14,8 +14,8 @@ import food from '../assets/Food.png'
 const Projects = () => {
 	return (
 		<div className={styles.temp} id='projects'>
+			<h1>Projects</h1>
 			<div className={styles.projectSection}>
-				<h1>Projects</h1>
 				<div className={styles.cardContainer}>
 					<div className={styles.card}>
 						<Card

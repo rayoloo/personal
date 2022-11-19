@@ -43,6 +43,7 @@ export default function ContactForm() {
 						<input type='email' id='email ' name='email' required={true} />
 						<label>Message</label>
 						<textarea
+							className={styles.area}
 							id='message'
 							name='message'
 							rows='4'
