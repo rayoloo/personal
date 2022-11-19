@@ -12,7 +12,7 @@
 }
 
 .navbar .header {
-	color: #f3ece4;
+	color: #fab74b;
 	font-size: 2rem;
 	font-weight: 500;
 	display: flex;
@@ -34,7 +34,7 @@
 .navbar .nav li a {
 	font-size: 1.1rem;
 	font-weight: 500;
-	color: #f3ece4;
+	color: #fab74b;
 }
 
 .navbar .nav li a:visited,
@@ -48,7 +48,7 @@ a:active {
 }
 
 .icon {
-	color: #f3ece4;
+	color: #fab74b;
 	font-size: 1.5rem;
 }
 
@@ -102,5 +102,19 @@ a:active {
 
 	.navbar .nav li a {
 		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.navbar {
+		height: 100px;
+	}
+
+	.mobileHeader .hamburger {
+		width: 10%;
+		display: inline-block;
+	}
+	.navbar .header {
+		font-size: 1.8rem;
 	}
 }

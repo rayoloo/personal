@@ -6,7 +6,7 @@ const Hero = () => {
 		<div className={styles.hero} id='hero'>
 			<div>
 				<h1>Welcome</h1>
-				<p>Aspiring Developer seeking opportunities!</p>
+				<p>Aspiring developer seeking opportunities!</p>
 			</div>
 		</div>
 	)

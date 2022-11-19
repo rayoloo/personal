@@ -1,5 +1,5 @@
 .Contact {
-	background: #ececec;
+	background: #121118;
 	padding: 2rem;
 	width: 100%;
 	height: 90vh;
@@ -13,6 +13,7 @@
 	font-size: 5rem;
 	text-align: center;
 	font-weight: 400;
+	color: #fab74b;
 }
 
 form {
@@ -27,6 +28,7 @@ form {
 form label {
 	font-size: 1.1rem;
 	margin-bottom: 0.5rem;
+	color: #fab74b;
 }
 
 form input,
@@ -36,7 +38,9 @@ textarea {
 	font-size: 1.2rem;
 	resize: none;
 	border-radius: 10px;
-	border: solid 2px #767676;
+	border: solid 2px #252424;
+	color: #fab74b;
+	background: #1a1a1b;
 }
 
 .show {
@@ -53,6 +57,23 @@ textarea {
 	padding-left: 0.5rem;
 	padding-top: 0.5rem;
 	font-family: 'Poppins';
+	color: #fab74b;
+}
+
+.area::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #fab74b;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #fab74b;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #fab74b;
 }
 
 .lower {
@@ -65,9 +86,9 @@ textarea {
 }
 
 .button {
-	background-color: #4caf50; /* Green */
+	background-color: #fab74b;
 	border: none;
-	color: white;
+	color: black;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -80,8 +101,7 @@ textarea {
 }
 
 .button:hover {
-	background-color: #18bd03; /* Green */
-	color: white;
+	background-color: #fac97c;
 }
 
 @media screen and (max-width: 680px) {
