@@ -48,6 +48,12 @@ const About = () => {
 										<li>Computer Architecture</li>
 										<li>Relational Database</li>
 									</ul>
+									<img
+										height='70px'
+										width='70px'
+										src='https://freesvg.org/img/preferences-system.png'
+										alt=''
+									/>
 								</AccordionPanel>
 							</AccordionItem>
 
