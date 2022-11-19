@@ -30,18 +30,18 @@ const About = () => {
 					</div>
 					<br />
 					<br />
-					<div className={styles.fourCards}>
+					<div className={styles.Accordion}>
 						<Accordion defaultIndex={[0]} allowMultiple>
 							<AccordionItem>
 								<h2>
 									<AccordionButton>
-										<Box flex='1' textAlign='left'>
+										<Box flex='1' textAlign='left' className={styles.aHeader}>
 											Technical Skills
 										</Box>
 										<AccordionIcon />
 									</AccordionButton>
 								</h2>
-								<AccordionPanel pb={4}>
+								<AccordionPanel pb={4} className={styles.font}>
 									<ul>
 										<li>Web Development</li>
 										<li>Object-Orientated Programming</li>
@@ -55,13 +55,13 @@ const About = () => {
 							<AccordionItem>
 								<h2>
 									<AccordionButton>
-										<Box flex='1' textAlign='left'>
+										<Box flex='1' textAlign='left' className={styles.aHeader}>
 											Software Technologies
 										</Box>
 										<AccordionIcon />
 									</AccordionButton>
 								</h2>
-								<AccordionPanel pb={4}>
+								<AccordionPanel pb={4} className={styles.font}>
 									<ul>
 										<li>Microsoft Office</li>
 										<li>Visual Studio Code</li>
@@ -86,13 +86,13 @@ const About = () => {
 							<AccordionItem>
 								<h2>
 									<AccordionButton>
-										<Box flex='1' textAlign='left'>
+										<Box flex='1' textAlign='left' className={styles.aHeader}>
 											Web Development
 										</Box>
 										<AccordionIcon />
 									</AccordionButton>
 								</h2>
-								<AccordionPanel pb={4}>
+								<AccordionPanel pb={4} className={styles.font}>
 									<p>
 										HTML, CSS, JS, SASS, TypeScript, React, React Native, Figma,
 										Flask, Express, Django, and NextJS
@@ -108,13 +108,13 @@ const About = () => {
 							<AccordionItem>
 								<h2>
 									<AccordionButton>
-										<Box flex='1' textAlign='left'>
+										<Box flex='1' textAlign='left' className={styles.aHeader}>
 											Education
 										</Box>
 										<AccordionIcon />
 									</AccordionButton>
 								</h2>
-								<AccordionPanel pb={4}>
+								<AccordionPanel pb={4} className={styles.font}>
 									<p>Computer Engineering Graduate</p>
 									<br></br>
 									<p>
@@ -137,13 +137,13 @@ const About = () => {
 							<AccordionItem>
 								<h2>
 									<AccordionButton>
-										<Box flex='1' textAlign='left'>
+										<Box flex='1' textAlign='left' className={styles.aHeader}>
 											Coding Languages
 										</Box>
 										<AccordionIcon />
 									</AccordionButton>
 								</h2>
-								<AccordionPanel pb={4}>
+								<AccordionPanel pb={4} className={styles.font}>
 									<p>
 										Java, C, Python, VHDL, MIPS Assembly Language, JS,
 										Typescript,and SQLite

@@ -9,7 +9,15 @@
 	padding-left: 3rem;
 	scroll-margin-top: 8vh;
 	color: rgb(252, 239, 239);
-	font-size: 3rem;
+	font-family: 'Poppins';
+}
+
+.hero h1 {
+	font-size: 10rem;
+}
+
+.hero p {
+	font-size: 5rem;
 }
 
 .hero:before {

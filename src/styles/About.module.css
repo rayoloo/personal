@@ -26,20 +26,32 @@
 	font-size: 1.7rem;
 	/* font-weight: 500; */
 	background-color: #121118;
-	color: #f3ecb7;
+	color: var(--orange);
 
 	scroll-margin-top: 8vh;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-top: 3rem;
+
+	font-family: 'Poppins';
 }
-.aboutContainer {
+
+.temp h1 {
+	font-size: 2.5rem;
+}
+
+.temp .aboutContainer {
 	display: flex;
 	gap: 1rem;
 }
 
+.font {
+	font-size: 1rem;
+}
+
 .aboutBox {
-	background-color: #da2020;
+	background-color: #f3ece4;
+	color: #000;
 	width: 100%;
 	height: 100%;
 	border-radius: 5px;
@@ -47,100 +59,20 @@
 	flex: 35%;
 }
 
-.fourCards {
+.Accordion {
 	margin: 0 auto;
 	width: 100%;
 	padding-bottom: 3rem;
 	flex: 55%;
 }
 
-.box {
-	border-radius: 5px;
-	box-shadow: 0px 10px 40px -20px var(--grayishBlue);
-	padding: 25px;
-	margin: 20px;
-	background-color: #f3ecb7;
-}
-
-.box h3 {
-	font-size: 1.2rem;
-	color: var(--grayishBlue);
-}
-
-.box h2 {
-	font-size: 2rem;
-	padding-bottom: 1rem;
-	color: var(--grayishBlue);
-}
-
-.box ul {
-	color: var(--grayishBlue);
-	font-size: 1rem;
-	list-style-type: disc;
-	padding: 1rem;
-}
-
-.box li {
-	color: var(--grayishBlue);
-	font-size: 1rem;
-}
-
-.box p {
-	color: var(--grayishBlue);
-	font-size: 1rem;
+.aHeader {
+	font-size: 1.5rem;
 }
 
 img {
 	float: right !important;
-}
-
-.cyan {
-	border-top: 3px solid var(--cyan);
-}
-.red {
-	border-top: 3px solid var(--red);
-}
-.blue {
-	border-top: 3px solid var(--blue);
-}
-.orange {
-	border-top: 3px solid var(--orange);
-}
-
-@media screen and (min-width: 950px) {
-	.row1-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.row2-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.box-down {
-		position: relative;
-		top: 150px;
-	}
-	.box {
-		width: 20%;
-	}
-}
-
-@media screen and (max-width: 950px) and (min-width: 450px) {
-	.box {
-		text-align: center;
-		height: 100%;
-		font-size: 1rem;
-		padding-bottom: 90px;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	h1 {
-		font-size: 1.5rem;
-	}
+	padding-bottom: 1rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
