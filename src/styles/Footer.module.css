@@ -1,11 +1,29 @@
+@import url(./vars.css);
+
 .Footer .container {
 	width: 100%;
 	height: 7vh;
 	text-align: center;
-	background-color: #121118;
-	color: #fab74b;
+	color: var(--primary-text-color);
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem 3rem;
-	font-family: 'Poppins';
+}
+
+.Footer {
+	background-color: var(--primary-background);
+}
+
+@media screen and (max-width: 1024px) {
+	.Footer .container {
+		height: 5vh;
+		padding: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.Footer .container {
+		height: 4vh;
+		padding: 1.5rem;
+	}
 }

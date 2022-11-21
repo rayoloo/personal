@@ -28,10 +28,9 @@ const About = () => {
 							about myself.
 						</p>
 					</div>
-					<br />
 					<div className={styles.Accordion}>
 						<Accordion allowMultiple>
-							<AccordionItem>
+							<AccordionItem className={styles.AccordionLine}>
 								<h2>
 									<AccordionButton>
 										<Box flex='1' textAlign='left' className={styles.aHeader}>
@@ -98,10 +97,19 @@ const About = () => {
 									</AccordionButton>
 								</h2>
 								<AccordionPanel pb={4} className={styles.font}>
-									<p>
-										HTML, CSS, JS, SASS, TypeScript, React, React Native, Figma,
-										Flask, Express, Django, and NextJS
-									</p>
+									<ul>
+										<li>HTML</li>
+										<li>CSS and Sass</li>
+										<li>Javascript and TypeScript</li>
+										<li>React</li>
+										<li>React Native</li>
+										<li>NextJS</li>
+										<li>NodeJS</li>
+										<li>Flask</li>
+										<li>Express</li>
+										<li>Django</li>
+										<li>Figma</li>
+									</ul>
 									<img
 										src='https://assets.codepen.io/2301174/icon-team-builder.svg'
 										alt=''
@@ -125,12 +133,15 @@ const About = () => {
 									<p>
 										<u>Relevant Courses:</u>
 									</p>
-									<p>
-										Digital Systems, Object-Orientated Programming, Computer
-										Architecture, Operating Systems, Embedded Systems, Computer
-										Networks, and Computer Vision
-									</p>
-									<br />
+									<ul>
+										<li>Digital Systems</li>
+										<li>Object-Orientated Programming</li>
+										<li>Computer Architecture</li>
+										<li>Operating Systems</li>
+										<li>Embedded Systems</li>
+										<li>Computer Networks</li>
+										<li>Computer Vision</li>
+									</ul>
 									<img
 										src='https://assets.codepen.io/2301174/icon-calculator.svg'
 										alt=''
@@ -149,12 +160,17 @@ const About = () => {
 									</AccordionButton>
 								</h2>
 								<AccordionPanel pb={4} className={styles.font}>
-									<p>
-										Java, C, Python, VHDL, MIPS Assembly Language, JS,
-										Typescript,and SQLite
-									</p>
-									<br />
-									<p>Learning C++</p>
+									<ul>
+										<li>Java</li>
+										<li>C</li>
+										<li>Python</li>
+										<li>Javascript</li>
+										<li>TypeScript</li>
+										<li>VHDL</li>
+										<li>Assembly(MIPS)</li>
+										<li>SQLite</li>
+										<li></li>
+									</ul>
 									<img
 										src='https://assets.codepen.io/2301174/icon-karma.svg'
 										alt=''

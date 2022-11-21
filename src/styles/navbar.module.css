@@ -1,3 +1,13 @@
+@import './vars.css';
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Main Navbar container */
 .navbar {
 	position: fixed;
 	height: 92px;
@@ -6,13 +16,13 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
-	background: #121118;
+	background: var(--primary-background);
 	z-index: 10;
-	font-family: 'Poppins';
 }
 
+/* Header Portion or Raymond Lam Part */
 .navbar .header {
-	color: #fab74b;
+	color: var(--primary-text-color);
 	font-size: 2rem;
 	font-weight: 500;
 	display: flex;
@@ -20,6 +30,8 @@
 	align-items: center;
 	padding: 1rem;
 }
+
+/* Link portion of navbar*/
 .navbar .nav {
 	display: flex;
 	justify-content: center;
@@ -34,7 +46,7 @@
 .navbar .nav li a {
 	font-size: 1.1rem;
 	font-weight: 500;
-	color: #fab74b;
+	color: var(--primary-text-color);
 }
 
 .navbar .nav li a:visited,
@@ -43,12 +55,16 @@ a:active {
 	text-decoration: none;
 }
 
+.navbar .nav li a:hover {
+	color: #e9dcc9;
+}
+
 .hamburger {
 	display: none;
 }
 
 .icon {
-	color: #fab74b;
+	color: var(--primary-text-color);
 	font-size: 1.5rem;
 }
 
@@ -88,7 +104,7 @@ a:active {
 		height: 100vh;
 		transition: 0.4s;
 		z-index: -1;
-		background: rgba(0, 0, 0, 0.9);
+		background: rgba(21, 20, 29, 0.9);
 		padding: 0;
 	}
 
@@ -110,11 +126,13 @@ a:active {
 		height: 100px;
 	}
 
-	.mobileHeader .hamburger {
-		width: 10%;
-		display: inline-block;
-	}
 	.navbar .header {
 		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	.navbar .header {
+		font-size: 1rem;
 	}
 }
