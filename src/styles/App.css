@@ -21,5 +21,5 @@ body {
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-	background: #ff0000; /*color of the scroll bar*/
+	background: transparent; /* Optional color of the scroll bar*/
 }

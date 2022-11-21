@@ -15,17 +15,6 @@
 	margin-left: 0.5rem;
 }
 
-.cardContainer {
-	max-width: 1440px;
-	margin: 0 auto;
-	margin-top: 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	gap: 2rem;
-}
-
 .card {
 	margin: 10px;
 	background-color: #d5d2d2;
@@ -128,7 +117,6 @@
 	margin: 0;
 	color: #000;
 	padding: 1px 5px;
-	width: 365px;
 }
 .tag-teal2 {
 	background-color: #66efb4;
@@ -138,19 +126,42 @@
 	color: #000;
 	padding: 1px 5px;
 }
-/* 
-#121118
-#EEA47F - black text
-#684A8E
-#F3ECE4 - black text
-#4B4D72
- */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 735px) {
 	.cardContainer {
-		width: 100%;
+		max-width: 1440px;
+		margin: 20px auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		gap: 2rem;
 	}
+}
+@media screen and (max-width: 735px) {
+	.cardContainer {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+		gap: 4rem;
+		width: 100%;
+		scroll-behavior: smooth;
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 1rem;
+	}
+	.cardContainer::-webkit-scrollbar {
+		height: 8px; /* horizontal scrollbar width*/
+		width: 5px; /* Remove scrollbar width */
+		background: transparent; /* Optional: just make scrollbar invisible */
+	}
+
+	.cardContainer::-webkit-scrollbar-thumb {
+		background: #ffffff; /*color of the scroll bar*/
+	}
+
 	.card {
-		width: 70%;
+		flex: 0 0 auto;
+		overflow: hidden;
 	}
 
 	.card-body h3 {
