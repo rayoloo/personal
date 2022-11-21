@@ -70,10 +70,10 @@ const Projects = () => {
 					</div>
 					<div className={styles.card}>
 						<Card
-							tag1='FullStack Application'
-							tag1Style='tag-orange'
-							tag2='API'
-							tag2Style='tag-purple'
+							tag2='FullStack Application'
+							tag2Style='tag-orange'
+							tag1='API'
+							tag1Style='tag-purple'
 							imageLink={spotify}
 							heading={'Spotify Rooms'}
 							text={'Private rooms to listen to music with friends.'}

@@ -53,6 +53,7 @@
 .card-body {
 	padding: 20px;
 	height: 250px;
+	text-align: center;
 }
 
 .card-body .card-tag {
@@ -64,6 +65,7 @@
 	font-size: 2rem;
 	color: #000000;
 	padding-bottom: 1rem;
+	font-weight: 700;
 }
 
 .card-body .cardText {
@@ -148,6 +150,15 @@
 	}
 	.card {
 		width: 70%;
+	}
+
+	.card-body h3 {
+		font-size: 1.35rem;
+		padding-bottom: 1rem;
+	}
+
+	.card-body .cardText {
+		font-size: 0.9rem;
 	}
 }
 
