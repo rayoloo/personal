@@ -26,7 +26,7 @@ const Projects = () => {
 							imageLink={food}
 							heading={'Gourmet Today'}
 							text={
-								'Online meal preparation service for companies with a wide selection of caterers.'
+								'Online meal preparation service with a wide selection of caterers.'
 							}
 						/>
 					</div>
