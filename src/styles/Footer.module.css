@@ -16,14 +16,14 @@
 
 @media screen and (max-width: 1024px) {
 	.Footer .container {
-		height: 5vh;
+		height: 6vh;
 		padding: 1.5rem;
 	}
 }
 
 @media screen and (max-width: 320px) {
 	.Footer .container {
-		height: 4vh;
+		height: 5vh;
 		padding: 1.5rem;
 	}
 }
