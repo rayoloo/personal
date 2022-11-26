@@ -24,6 +24,13 @@ const AboutCard = props => {
 				</div>
 				<h3>{props.heading}</h3>
 				<p className={styles.cardText}>{props.text}</p>
+				{props.link != null && (
+					<a href={props.link} target='_blank' rel='noreferrer'>
+						<button type='button' className={styles.button}>
+							Visit Site
+						</button>
+					</a>
+				)}
 			</div>
 		</div>
 	)

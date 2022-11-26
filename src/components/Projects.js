@@ -21,22 +21,10 @@ const Projects = () => {
 						<Card
 							tag1='Website Design'
 							tag1Style='tag-red'
-							tag2='Backend'
-							tag2Style='tag-purple'
-							imageLink={food}
-							heading={'Gourmet Today'}
-							text={
-								'Online meal preparation service with a wide selection of caterers.'
-							}
-						/>
-					</div>
-					<div className={styles.card}>
-						<Card
-							tag1='Website Design'
-							tag1Style='tag-red'
 							imageLink={defi}
-							heading={'DeFi'}
-							text={'Decentralized Trading'}
+							heading='DeFi'
+							text='Decentralized Trading'
+							link='https://cool-defi.vercel.app/'
 						/>
 					</div>
 					<div className={styles.card}>
@@ -44,8 +32,9 @@ const Projects = () => {
 							tag1='Website Design'
 							tag1Style='tag-red'
 							imageLink={realestate}
-							heading={'Real Estate'}
-							text={'Home to Rent or Sell.'}
+							heading='Real Estate'
+							text='Home to Rent or Sell.'
+							link='https://csst-ricks.vercel.app/'
 						/>
 					</div>
 					<div className={styles.card}>
@@ -53,8 +42,9 @@ const Projects = () => {
 							tag1='Website Design'
 							tag1Style='tag-red'
 							imageLink={space}
-							heading={'Space Exploration'}
-							text={'Looking for accommodation while space traveling?'}
+							heading='Space Exploration'
+							text='Looking for accommodation while space traveling?'
+							link='https://nice-looking-website.vercel.app/'
 						/>
 					</div>
 					<div className={styles.card}>
@@ -64,8 +54,22 @@ const Projects = () => {
 							tag2='Website Design'
 							tag2Style='tag-red'
 							imageLink={pokedex}
-							heading={'Pokedex'}
-							text={'Encyclopedia of Pokemon powered by PokeAPI.'}
+							heading='Pokedex'
+							text='Encyclopedia of Pokemon powered by PokeAPI.'
+							link='https://pokedex-rayoloo.vercel.app/'
+						/>
+					</div>
+					<div className={styles.card}>
+						<Card
+							tag1='Website Design'
+							tag1Style='tag-red'
+							tag2='Backend'
+							tag2Style='tag-purple'
+							imageLink={food}
+							heading={'Gourmet Today'}
+							text={
+								'Online meal preparation service with a wide selection of caterers.'
+							}
 						/>
 					</div>
 					<div className={styles.card}>

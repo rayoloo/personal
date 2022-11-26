@@ -109,6 +109,9 @@ const About = () => {
 										<li>Express</li>
 										<li>Django</li>
 										<li>Figma</li>
+										<li>Postman</li>
+										<li>Bootstrap</li>
+										<li>Tailwind</li>
 									</ul>
 									<img
 										src='https://assets.codepen.io/2301174/icon-team-builder.svg'

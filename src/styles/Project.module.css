@@ -23,7 +23,7 @@
 	overflow: hidden;
 	width: 300px;
 	transition: all 0.2s ease-in-out;
-	height: 500px;
+	height: 600px;
 }
 
 .card:hover {
@@ -60,6 +60,26 @@
 .cardText {
 	color: rgb(0, 0, 0);
 	font-size: 1rem;
+	padding-bottom: 1rem;
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: rgb(8, 94, 156);
+	border-radius: 15px;
+}
+
+.button:hover {
+	background-color: var(--veryDarkBlue);
+	color: white;
 }
 
 .tag-red {
@@ -139,6 +159,8 @@
 }
 @media screen and (max-width: 735px) {
 	.cardContainer {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 		display: flex;
 		flex-wrap: nowrap;
 		overflow-x: auto;
@@ -163,6 +185,7 @@
 	.card {
 		flex: 0 0 auto;
 		overflow: hidden;
+		height: 520px;
 	}
 
 	.card-body h3 {
