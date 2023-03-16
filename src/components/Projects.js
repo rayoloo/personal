@@ -10,6 +10,10 @@ import space from '../assets/space.png'
 import pokedex from '../assets/pokedex.png'
 import stock from '../assets/stock.png'
 import food from '../assets/Food.png'
+import alpaca from '../assets/alpaca.png'
+import netflix from '../assets/netflix.png'
+import todo from '../assets/todo.png'
+import weather from '../assets/weather.png'
 
 const Projects = () => {
 	return (
@@ -79,6 +83,42 @@ const Projects = () => {
 							imageLink={RFIDpicture}
 							heading={'RFID Security Door'}
 							text={'Motorized door that opens to approved key fobs'}
+						/>
+					</div>
+					<div className={styles.card}>
+						<Card
+							imageLink={netflix}
+							heading={'Netflix Clone'}
+							text={
+								'Netflix clone that has login authentication to edit saved movies/shows.'
+							}
+							link='https://netflix-5040d.web.app/'
+						/>
+					</div>
+					<div className={styles.card}>
+						<Card
+							imageLink={weather}
+							heading={'Weather'}
+							text={
+								'Weather application that pulls data from a weather api to be displayed.'
+							}
+						/>
+					</div>
+					<div className={styles.card}>
+						<Card
+							imageLink={alpaca}
+							heading={'Alpaca Land'}
+							text={
+								'Poppy website design for displaying alpaca variants of this colourful universe.'
+							}
+							link='https://alpaca-dt4m.onrender.com/'
+						/>
+					</div>
+					<div className={styles.card}>
+						<Card
+							imageLink={todo}
+							heading={'Todo List'}
+							text={'Todo list that saves state on refresh/reload.'}
 						/>
 					</div>
 				</div>

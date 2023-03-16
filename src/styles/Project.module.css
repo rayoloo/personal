@@ -28,7 +28,7 @@
 }
 
 .card:hover {
-	transform: scale(1.05);
+	transform: translateY(-15px);
 	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -61,21 +61,24 @@
 }
 
 .button {
-	border: none;
-	color: white;
+	background-color: var(--primary-background-color);
+	color: black;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 1rem;
-	margin: 4px 2px;
-	cursor: pointer;
-	background-color: rgb(8, 94, 156);
-	border-radius: 15px;
+	font-size: 16px;
+	max-width: 250px;
+	margin: auto;
+	border-radius: 10px;
+	margin-top: 1.5rem;
+	outline: 2px solid var(--primary-text-color);
+	color: var(--primary-text-color);
 }
 
 .button:hover {
-	background-color: rgb(20, 130, 208);
+	background-color: var(--primary-text-color);
+	color: white;
 }
 
 /* Smaller than 735px  */
@@ -113,7 +116,7 @@
 
 	.cardContainer::-webkit-scrollbar-thumb {
 		content: 'Scroll';
-		background: #ffffff; /*color of the scroll bar*/
+		background: #9b9b9b; /*color of the scroll bar*/
 	}
 
 	.card {
