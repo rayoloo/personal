@@ -9,7 +9,7 @@ export default function FooterComponent() {
 				<p>©2022 Raymond Lam</p>
 				<div style={{ display: 'flex', justifyContent: 'center' }}>
 					<a href='https://github.com/rayoloo'>
-						<GithubOutlined style={{ fontSize: 20, color: '#fab74b' }} />
+						<GithubOutlined className={styles.ficon} />
 					</a>
 				</div>
 			</div>

@@ -14,6 +14,11 @@
 	background-color: var(--primary-background);
 }
 
+.ficon {
+	font-size: 20px;
+	color: var(--primary-text-color);
+}
+
 @media screen and (max-width: 1024px) {
 	.Footer .container {
 		height: 6vh;

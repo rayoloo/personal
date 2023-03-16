@@ -37,9 +37,9 @@ textarea {
 	font-size: 1.2rem;
 	resize: none;
 	border-radius: 10px;
-	border: solid 2px #252424;
 	color: var(--primary-text-color);
-	background: #1a1a1b;
+	background: var(--secondary-background-color);
+	outline: 2px solid var(--primary-text-color);
 }
 
 .area {
@@ -70,7 +70,7 @@ textarea {
 }
 
 .button {
-	background-color: var(--primary-text-color);
+	background-color: var(--primary-background-color);
 	border: none;
 	color: black;
 	padding: 15px 32px;
@@ -82,10 +82,12 @@ textarea {
 	margin: auto;
 	border-radius: 10px;
 	margin-top: 1.5rem;
+	outline: 2px solid var(--primary-text-color);
 }
 
 .button:hover {
-	background-color: var(--secondary-text-color);
+	background-color: var(--primary-text-color);
+	color: white;
 }
 
 @media screen and (max-width: 1024px) {

@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import styles from '../styles/navbar.module.css'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-scroll'
+import Switch from './Switch'
 
-const Navbar = () => {
+const Navbar = props => {
 	const [click, setClick] = useState(false)
 	const handleClick = () => setClick(!click)
 	const closeMenu = () => setClick(false)
@@ -59,6 +60,9 @@ const Navbar = () => {
 						onClick={closeMenu}>
 						Contact
 					</Link>
+				</li>
+				<li>
+					<Switch func={props.func} theme={props.theme} />
 				</li>
 			</ul>
 		</div>

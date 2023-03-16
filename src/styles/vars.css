@@ -1,24 +1,22 @@
 :root {
-	--primary-background: #121118;
-	--primary-text-color: #fca311;
-	--secondary-text-color: #fab74b;
-	--red: hsl(0, 78%, 62%);
-	--cyan: hsl(180, 62%, 55%);
-	--orange: hsl(34, 97%, 64%);
-	--blue: hsl(212, 86%, 64%);
-	--veryDarkBlue: hsl(234, 12%, 34%);
-	--grayishBlue: hsl(229, 6%, 66%);
-	--veryLightGray: hsl(0, 0%, 98%);
+	--primary-background: #ffffff;
+	--secondary-background: white;
+	--primary-text-color: black;
+	--secondary-text-color: white;
+	--card-color: white;
+	--HeroSplash: url(../assets/janelle-hewines-RIX-PE0dQ-k-unsplash.jpg);
 }
 
-/* 
-#EEA47F - black text
-#684A8E
-#F3ECE4 - black text
-#4B4D72
- */
+[data-theme='dark'] {
+	--primary-background: #202636;
+	--secondary-background: #2a3245;
+	--primary-text-color: #5f6a89;
+	--secondary-text-color: white;
+	--card-color: #2a3245;
+	--HeroSplash: url(../assets/adam-vradenburg-RZrxwdZ9XEQ-unsplash.jpg);
+}
 
-/* Screen Breakpoints order matters when dealing with max-width or min-width*/
+/* Screen Breakpoints order matters when dealing with max-width(start with small and increase breakpoints shown below) or min-width(start big and decrease breakpoints)*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
@@ -37,5 +35,4 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	/* do nothing */
 }

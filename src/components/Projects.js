@@ -19,8 +19,6 @@ const Projects = () => {
 				<div className={styles.cardContainer}>
 					<div className={styles.card}>
 						<Card
-							tag1='Website Design'
-							tag1Style='tag-red'
 							imageLink={defi}
 							heading='DeFi'
 							text='Decentralized Trading'
@@ -29,8 +27,6 @@ const Projects = () => {
 					</div>
 					<div className={styles.card}>
 						<Card
-							tag1='Website Design'
-							tag1Style='tag-red'
 							imageLink={realestate}
 							heading='Real Estate'
 							text='Home to Rent or Sell.'
@@ -39,8 +35,6 @@ const Projects = () => {
 					</div>
 					<div className={styles.card}>
 						<Card
-							tag1='Website Design'
-							tag1Style='tag-red'
 							imageLink={space}
 							heading='Space Exploration'
 							text='Looking for accommodation while space traveling?'
@@ -49,10 +43,6 @@ const Projects = () => {
 					</div>
 					<div className={styles.card}>
 						<Card
-							tag1='API'
-							tag1Style='tag-purple'
-							tag2='Website Design'
-							tag2Style='tag-red'
 							imageLink={pokedex}
 							heading='Pokedex'
 							text='Encyclopedia of Pokemon powered by PokeAPI.'
@@ -61,10 +51,6 @@ const Projects = () => {
 					</div>
 					<div className={styles.card}>
 						<Card
-							tag1='Website Design'
-							tag1Style='tag-red'
-							tag2='Backend'
-							tag2Style='tag-purple'
 							imageLink={food}
 							heading={'Gourmet Today'}
 							text={
@@ -74,10 +60,6 @@ const Projects = () => {
 					</div>
 					<div className={styles.card}>
 						<Card
-							tag2='FullStack Application'
-							tag2Style='tag-orange'
-							tag1='API'
-							tag1Style='tag-purple'
 							imageLink={spotify}
 							heading={'Spotify Rooms'}
 							text={'Private rooms to listen to music with friends.'}
@@ -86,10 +68,6 @@ const Projects = () => {
 					<div className={styles.card}>
 						<Card
 							imageLink={stock}
-							tag1='Python'
-							tag1Style='tag-yellow'
-							tag2='Tensorflow'
-							tag2Style='tag-green'
 							heading={'Stock Forecast'}
 							text={
 								'Forecast the closing value of a single security for the upcoming 30 days.'
@@ -99,8 +77,6 @@ const Projects = () => {
 					<div className={styles.card}>
 						<Card
 							imageLink={RFIDpicture}
-							tag1='Arduino'
-							tag1Style='tag-teal'
 							heading={'RFID Security Door'}
 							text={'Motorized door that opens to approved key fobs'}
 						/>

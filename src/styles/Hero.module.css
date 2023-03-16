@@ -4,7 +4,7 @@
 	width: 100%;
 	height: 100vh;
 	/* mask for background image */
-	background-color: rgba(0, 0, 0, 0.377);
+	background-color: rgba(0, 0, 0, 0.158);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -13,7 +13,7 @@
 	padding-right: 3rem;
 	text-align: center;
 	scroll-margin-top: 8vh;
-	color: var(--primary-text-color);
+	color: var(--secondary-text-color);
 }
 
 .hero h1 {
@@ -28,7 +28,7 @@
 
 .hero:before {
 	content: '';
-	background-image: url(../assets/herocropped-modified.jpg);
+	background-image: var(--HeroSplash);
 	background-position: 50% 30%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

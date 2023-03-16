@@ -45,7 +45,7 @@ const About = () => {
 										<li>Object-Orientated Programming</li>
 										<li>Digital Systems</li>
 										<li>Computer Architecture</li>
-										<li>Relational Database</li>
+										<li>Relational Database Management</li>
 									</ul>
 									<img
 										height='70px'
@@ -69,10 +69,12 @@ const About = () => {
 									<ul>
 										<li>Microsoft Office</li>
 										<li>Visual Studio Code</li>
+										<li>Postman</li>
 										<li>NetBeans</li>
 										<li>Eclipse</li>
 										<li>Ubuntu</li>
 										<li>SQLite</li>
+										<li>MySQL</li>
 										<li>Figma</li>
 										<li>Git</li>
 										<li>Matlab</li>
@@ -170,9 +172,6 @@ const About = () => {
 										<li>Javascript</li>
 										<li>TypeScript</li>
 										<li>VHDL</li>
-										<li>Assembly(MIPS)</li>
-										<li>SQLite</li>
-										<li></li>
 									</ul>
 									<img
 										src='https://assets.codepen.io/2301174/icon-karma.svg'
