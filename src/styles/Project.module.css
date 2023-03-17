@@ -81,7 +81,7 @@
 	color: white;
 }
 
-/* Smaller than 735px  */
+/* Bigger than 735px  */
 @media screen and (min-width: 735px) {
 	.cardContainer {
 		max-width: 1440px;
@@ -93,7 +93,7 @@
 		gap: 2rem;
 	}
 }
-/* Bigger than 735px */
+/* Smaller than 735px */
 @media screen and (max-width: 735px) {
 	.cardContainer {
 		padding-left: 1.5rem;
@@ -132,6 +132,11 @@
 
 	.card-body .cardText {
 		font-size: 0.9rem;
+	}
+
+	.card:hover {
+		transform: scale(1.02);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 	}
 }
 /* Smaller than 365px */
